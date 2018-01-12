@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+<title>Staff Phonebook</title>
+<meta name="Author" content="mk05@gre.ac.uk" />
+<meta name="Description" content="PHP + Microsoft Access Phonebook" />
+<style type="text/css">
+body { padding:15px; font-family:sans-serif; }
+h1 { background:#9999FF; color:white; padding:1ex; }
+</style>
+</head>
+<body>
+<h1>Staff Phonebook</h1>
+<p>
+<a href="showPhonebook.php">See the entire phonebook</a>
+</p>
+<form action="insertPhonebook.php" method="post">
+<p>
+Insert a name into the phonebook<br />
+<br />
+First name <input type="text" name="txtFname"/><br />
+Surname <input type="text" name="txtSname"/><br />
+Telephone number <input type="text" name="txtPhone"/><br />
+<input type="submit" value="Insert"/><br />
+</p>
+</form>
+<form action="searchPhonebook.php">
+<p>
+Lookup a name in the phonebook<br />
+<br />
+Look for <input type="text" name="txtSearch"/><br />
+<input type="submit" value="Search"/><br />
+</p>
+</form>
+<form action="deletePhonebook.php">
+<p>
+Delete a name in the phonebook<br />
+<br />
+Look for <input type="text" name="txtSearch"/><br />
+<input type="submit" value="Delete"/><br />
+</p>
+</form>
+</body>
+</html>

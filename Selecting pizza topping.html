@@ -1,0 +1,41 @@
+<html>
+<head>
+<script>
+
+finalise function() { 
+if(document.order.chkbeetandMang.checked ==0) {
+alert('beetroot and mango not checked - Are you sure!!!!')
+ }
+}
+</script>
+</head>
+
+<body>
+<form name = "order">
+<H1> Enter Your Order details here </H1>
+<Input type text size=80
+name="address">
+<P><P>
+<H1> Choose Your Toppings </H1>
+<Input type= "Checkbox"
+name = "chkolives"> Olives
+<P>
+<Input type = "Checkbox"
+name = "chkchick"> Spicy chicken
+<P>
+<input type = "Checkbox"
+name = "chkspam"> Spam
+<P>
+<Input type = "Checkbox"
+name = "chkbeetandMang"> Beetroot and Mango
+<P><P>
+<Input type = "button" value = "confirm order" onclick = confirm()>
+<Input type = "button" value = "finalise order" onclick = finalise()>
+
+</body>
+
+</html>
+ 
+
+
+
