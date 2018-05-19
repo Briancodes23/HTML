@@ -38,7 +38,7 @@ $strSQL = 'SELECT id, firstname, surname, phone FROM staff ORDER BY id';
 $rs = $conn->execute($strSQL);
 
 
-//While loop used to carrry on looping while there are records, exits at end of the file
+//While loop used to carry on looping while there are records, exits at end of the file
 while (!$rs->EOF) {
   echo '<tr><td>' . $rs->Fields(0)->value . '</td>';
   echo '<td>' . $rs->Fields(1)->value . '</td>';
